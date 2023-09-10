@@ -12,7 +12,7 @@ const port = 8080;
 
 const connectToMongo = async () => {
     try {
-        await mongoose.connect(process.env.DB_URI, { useNewUrlParser: true });
+        await mongoose.connect("mongodb+srv://admin-nikhil:Nikhil5787@cluster0.efyjl.mongodb.net/", { useNewUrlParser: true });
         console.log('connected to MongoDB');
     } catch (error) {
         console.log('error connection to MongoDB:', error.message);
